@@ -51,6 +51,30 @@
           width: 100%;
           height: 3px;
           background-color: $mainColor;
+          transform-origin: left;
+          transition: all 2s ease;
+        }
+      }
+    }
+  }
+  &.active {
+    background-color: $mainColor;
+    color: white;
+
+    .hamburger {
+      span {
+        &:first-child {
+          background-color: white;
+          transform: rotate(
+            45deg
+          ); // this will make it rotate from center if transform-origin: left is not set on the default state above
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:last-child {
+          background-color: white;
+          transform: rotate(-45deg);
         }
       }
     }
