@@ -1,3 +1,5 @@
+import { Person, Mail } from '@material-ui/icons';
+
 import './topbar.scss';
 
 const Topbar = () => {
@@ -8,6 +10,14 @@ const Topbar = () => {
           <a href="#intro" className="logo">
             devKappa.
           </a>
+          <div className="itemContainer">
+            <Person className="icon" />
+            <span>+382 11 11 11</span>
+          </div>
+          <div className="itemContainer">
+            <Mail className="icon" />
+            <span>devKappa@gmail.com</span>
+          </div>
         </div>
         <div className="right">this is right</div>
       </div>
