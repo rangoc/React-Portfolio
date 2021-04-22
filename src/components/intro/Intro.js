@@ -7,8 +7,10 @@ const Intro = () => {
   const textRef = useRef();
   useEffect(() => {
     init(textRef.current, {
-      showCursor: false,
+      showCursor: true,
       strings: ['Developer', 'Designer', 'Creator'],
+      backDelay: 1500,
+      backSpeed: 60,
     });
   }, []);
   return (
