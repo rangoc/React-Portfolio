@@ -41,6 +41,10 @@
       }
       h3 {
         font-size: 30px;
+        span {
+          font-size: inherit;
+          color: crimson;
+        }
       }
     }
     a {
