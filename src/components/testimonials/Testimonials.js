@@ -42,7 +42,7 @@ const Testimonials = () => {
       <h1>Testimonials</h1>
       <div className="container">
         {data.map((d) => (
-          <div className={`card ${d.featured ? 'featured' : ''}`}>
+          <div className={`card ${d.featured ? 'featured' : ''}`} key={d.id}>
             <div className="top">
               <img src={rightArrow} className="left" alt="right arrow" />
               <img src={d.img} className="user" alt="testimonial" />
