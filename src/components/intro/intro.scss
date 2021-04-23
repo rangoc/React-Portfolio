@@ -10,6 +10,9 @@
   overflow: hidden;
   .left {
     flex: 0.5;
+    @include mobile {
+      overflow: hidden;
+    }
     .imgContainer {
       width: 750px;
       height: 750px;
