@@ -36,6 +36,7 @@ const Works = () => {
     },
   ];
   const handleClick = (direction) => {
+    // possible improvements would be implementing the logic for dynamic number of slides because currently it only works for 3
     direction === 'left'
       ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
       : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
@@ -47,7 +48,7 @@ const Works = () => {
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
       >
         {data.map((d) => (
-          <div className="container">
+          <div className="container" key={d.id}>
             <div className="item">
               <div className="left">
                 <div className="leftContainer">
