@@ -17,7 +17,7 @@ const Contact = () => {
         <h2>Contact</h2>
         <form onSubmit={handleFormSubmit}>
           <input type="text" placeholder="Email" />
-          <textarea name="" id="" cols="30" rows="10" placeholder="Message" />
+          <textarea placeholder="Message" />
           <button type="submit">Send</button>
           {message && <span>Thanks, I will reply ASAP :)</span>}
         </form>
